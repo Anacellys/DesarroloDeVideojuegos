@@ -1,0 +1,196 @@
+/* ====== ESTILOS GLOBALES ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #1b0034, #000);
+    color: #f0f0f0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ====== CONTENEDOR PRINCIPAL ====== */
+#contenedor {
+    width: 100%;
+    text-align: center;
+}
+
+/* ====== ENCABEZADO ====== */
+#header {
+    background: linear-gradient(90deg, #6200ff, #00d0ff);
+    padding: 20px;
+    text-shadow: 0 0 10px #000;
+    border-bottom: 3px solid #0ff;
+}
+
+#header h1 {
+    font-size: 2em;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+/* ====== BARRA DE NAVEGACIÓN ====== */
+#barra {
+    background: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 0 15px #0ff;
+    border-bottom: 2px solid #0ff;
+}
+
+#barra ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#barra ul li {
+    margin: 10px 15px;
+}
+
+#barra ul li a {
+    text-decoration: none;
+    color: #0ff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#barra ul li a:hover,
+#barra ul li a.activo {
+    background-color: #0ff;
+    color: #111;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #00f0ff;
+}
+
+/* ====== CONTENIDO PRINCIPAL ====== */
+#body {
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.tIndex {
+    color: #00f0ff;
+    text-shadow: 0 0 15px #0ff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* ====== IMÁGENES ====== */
+.imagen img {
+    width: 60%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 0 25px #00d0ff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagen img:hover {
+    transform: scale(1.05);
+}
+
+/* ====== TEXTO DEL CONTENIDO ====== */
+.textoConteni {
+    background-color: rgba(25, 25, 25, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #6200ff;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+/* ====== TABLAS ====== */
+table {
+    border-collapse: collapse;
+    margin: 25px auto;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 0 25px #00d0ff;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #333;
+}
+
+table th {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+table tr:hover {
+    background-color: rgba(0, 255, 255, 0.1);
+}
+
+table a {
+    color: #00eaff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #00f0ff;
+}
+
+/* ====== BOTONES ====== */
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background: linear-gradient(90deg, #6200ff, #00d0ff);
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px #00f0ff;
+}
+
+.boton:hover {
+    background: linear-gradient(90deg, #00d0ff, #6200ff);
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #00f0ff, 0 0 50px #6200ff;
+}
+
+/* ====== PIE DE PÁGINA ====== */
+#footer {
+    background: linear-gradient(90deg, #00d0ff, #6200ff);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 0.9em;
+    border-top: 2px solid #0ff;
+    text-shadow: 0 0 8px #000;
+}
+
+/* ====== EFECTOS RESPONSIVOS ====== */
+@media (max-width: 768px) {
+    #barra ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen img {
+        width: 90%;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+}
